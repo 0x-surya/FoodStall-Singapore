@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="CSS/order.css">
+</head>
+<body>
+     <!-- header starts here. -->
+     <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="./Images/MAIN_LOGO.png" alt="logo">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="./Index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./order.html" >Order</a>
+          <a href="./login.html">Login</a>
+          <a href="./contact_us.html">Contact Us</a>
+        </div>
+      </div>
+
+     <!-- main content starts here. -->
+    <div class="main">
+      <div class="order">
+
+      </div>
+      <div class="payment">
+        <h2>Payment</h2>
+        <form class="paymentform">
+          <h2>Personal Information</h2>
+          <label for="">Email Address</label><br>
+            <input type="email" required class="email">
+          <label for="">First name</label><br>
+            <input type="text" required class="fname">
+          <h2>Credit Card Info</h2>
+          <label for="">Name On Card</label><br>
+            <input type="text" required class="cardname">
+          <label for="">Card Number</label><br>
+            <input type="number" required class="cardno" placeholder="0000 0000 0000 0000">
+          <div class="expiry">
+            <div class="ex1">
+              <label for="">Expiration</label><br>
+              <input type="number" required class="exdate">
+              <input type="number" required class="exyear">
+            </div>
+            <div class="ex2">
+              <label for="">CVV Number</label><br>
+              <input type="number" required class="cvvno" placeholder="000">
+            </div>
+          </div>
+          <input type="submit" value="Submit" class="submit"><br>
+          <input type="checkbox" id="privacypolicy">
+          <label for="privacypolicy" class="privacy">By, checking this box.I Agree to the Terms & Conditions & Privacy Policy.</label>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
