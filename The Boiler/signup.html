@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Membership</title>
+    <link rel="stylesheet" href="./CSS/signup.css">
+</head>
+<body > 
+    <!-- header starts here. -->
+     <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          <img src="./Images/MAIN_LOGO.png" alt="logo">
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <a href="./Index.html">Home</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./order.html" >Order</a>
+        <a href="./login.html">Login</a>
+        <a href="./contact_us.html">Contact Us</a>
+      </div>
+    </div>
+
+
+
+
+<!-- Fancy Stuff+ Actual Form -->
+<div class="holder">
+  <div class="container">
+    <form  action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+      <h3>Sign Up</h3>
+      <div class="inputBox">
+        <span>Username</span>
+        <div class="box">
+          <input type="text" name="uname" required>
+        </div>
+      </div>
+
+      <div class="inputBox">
+        <span>Password</span>
+        <div class="box">
+          
+          <input type="password" name="pass" required>
+        </div>
+      </div>
+      <div class="inputBox">
+        <span>Email Address</span>
+        <div class="box">
+          
+          <input type="email" name="email" required>
+        </div>
+      </div>
+      <div class="inputBox">
+        <span>Phone Number</span>
+        <div class="box">
+          
+          <input type="tel" name="tel" required>
+        </div>
+      </div>
+
+      <div class="inputBox">
+        <span>Gender</span>
+        <div class="box">
+          <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        </div>
+      </div>
+      <label>
+        <input type="checkbox">Remember me
+      </label>
+
+      <div class="inputBox">
+        <div class="box">
+          <input type="submit" value="Sign in" name="signin">
+        </div>
+      </div>
+
+      
+      <a href="login.html" class="forgot">Already have a account?</a>
+
+    </form>
+  </div>
+</div>
+    
+</body>
+</html>
